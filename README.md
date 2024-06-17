@@ -109,12 +109,10 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const products = [
-                { name: 'Pink Shorts', price: '$29.99', image: 'assets/images/Pink shorts.jpeg' },
-                { name: 'Cow Shorts', price: '$34.99', image: 'assets/images/Panda.jpeg' },
-                { name: 'Beige Shorts', price: '$39.99', image: 'assets/images/Beige shorts.jpeg' },
-                { name: 'Beige Flower Shorts', price: '$29.99', image: 'assets/images/Beige flower.jpeg' },
+                { name: 'Pink Shorts', price: '$29.99', img: 'assets/images/Pink shorts.jpeg' },
+                { name: 'Cow Shorts', price: '$34.99', img: 'assets/images/Panda.jpeg' },
+                { name: 'Beige Shorts', price: '$39.99', img: 'assets/images/Beige shorts.jpeg' },
             ];
-
             const productGrid = document.querySelector('.product-grid');
 
             products.forEach(product => {
@@ -122,7 +120,7 @@
                 productCard.classList.add('product-card');
                 
                 const productImage = document.createElement('img');
-                productImage.src = product.image;
+                productImage.src = product.img;
                 productImage.alt = product.name;
                 
                 const productName = document.createElement('h3');
